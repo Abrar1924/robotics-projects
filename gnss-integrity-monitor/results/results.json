@@ -1,0 +1,823 @@
+{
+ "scenarios": [
+  {
+   "scenario": "Nominal",
+   "kind": "nominal",
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 0.0,
+    "heading": 0.0,
+    "course": 0.0,
+    "any": 0.0,
+    "any_dual": 0.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "delay_range": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "error_at_alarm": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "unprotected_error": 0.029767383138192473,
+   "protected_error": 0.029767383138192473,
+   "protected_dual_error": 0.029767383138192473,
+   "dual_alarm_sources": [],
+   "unprotected_breach": 0.0,
+   "protected_breach": 0.0,
+   "protected_dual_breach": 0.0
+  },
+  {
+   "scenario": "Multipath step (1.5 m, 10 s)",
+   "kind": "multipath",
+   "detected": {
+    "snapshot": 1.0,
+    "window": 1.0,
+    "bias": 1.0,
+    "iforest": 1.0,
+    "baseline": 1.0,
+    "heading": 1.0,
+    "course": 1.0,
+    "any": 1.0,
+    "any_dual": 1.0
+   },
+   "median_delay": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.10000000000000142,
+    "iforest": 0.20000000000000284,
+    "baseline": 0.20000000000000284,
+    "heading": 0.20000000000000284,
+    "course": 10.750000000000007,
+    "any": 0.0,
+    "any_dual": 0.0
+   },
+   "delay_range": {
+    "snapshot": [
+     0.0,
+     0.0
+    ],
+    "window": [
+     0.0,
+     0.0
+    ],
+    "bias": [
+     0.0,
+     0.20000000000000284
+    ],
+    "iforest": [
+     0.20000000000000284,
+     0.20000000000000284
+    ],
+    "baseline": [
+     0.20000000000000284,
+     5.900000000000006
+    ],
+    "heading": [
+     0.20000000000000284,
+     6.700000000000003
+    ],
+    "course": [
+     0.5,
+     11.900000000000006
+    ],
+    "any": [
+     0.0,
+     0.0
+    ],
+    "any_dual": [
+     0.0,
+     0.0
+    ]
+   },
+   "error_at_alarm": {
+    "snapshot": 0.24991827429630106,
+    "window": 0.24991827429630106,
+    "bias": 0.4851815983600023,
+    "iforest": 0.6906514219872679,
+    "baseline": 0.6929908230232003,
+    "heading": 0.6988997980884227,
+    "course": 0.8056573250016524,
+    "any": 0.24991827429630106,
+    "any_dual": 0.24991827429630106
+   },
+   "unprotected_error": 1.9661721104376553,
+   "protected_error": 1.5522617047864173,
+   "protected_dual_error": 0.7023707548712823,
+   "dual_alarm_sources": [
+    "imu"
+   ],
+   "unprotected_breach": 0.0,
+   "protected_breach": 0.0,
+   "protected_dual_breach": 0.0
+  },
+  {
+   "scenario": "Honest RTK float (receiver reports 0.3 m, 30 s)",
+   "kind": "float",
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 0.0,
+    "heading": 0.0,
+    "course": 0.0,
+    "any": 0.0,
+    "any_dual": 0.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "delay_range": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "error_at_alarm": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "unprotected_error": 0.3313559265573971,
+   "protected_error": 0.3313559265573971,
+   "protected_dual_error": 0.3313559265573971,
+   "dual_alarm_sources": [],
+   "unprotected_breach": 0.0,
+   "protected_breach": 0.0,
+   "protected_dual_breach": 0.0
+  },
+  {
+   "scenario": "Jamming (20 s outage)",
+   "kind": "jamming",
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 0.0,
+    "heading": 0.0,
+    "course": 0.0,
+    "any": 0.0,
+    "any_dual": 0.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "delay_range": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "error_at_alarm": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": null,
+    "any": null,
+    "any_dual": null
+   },
+   "unprotected_error": 3.4649980852826485,
+   "protected_error": 3.4649980852826485,
+   "protected_dual_error": 3.4649980852826485,
+   "dual_alarm_sources": [],
+   "unprotected_breach": 0.1,
+   "protected_breach": 0.1,
+   "protected_dual_breach": 0.1
+  },
+  {
+   "scenario": "Crude spoof (8 m jump)",
+   "kind": "jump_spoof",
+   "detected": {
+    "snapshot": 1.0,
+    "window": 1.0,
+    "bias": 1.0,
+    "iforest": 1.0,
+    "baseline": 1.0,
+    "heading": 1.0,
+    "course": 0.0,
+    "any": 1.0,
+    "any_dual": 1.0
+   },
+   "median_delay": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.20000000000000284,
+    "baseline": 0.20000000000000284,
+    "heading": 0.20000000000000284,
+    "course": null,
+    "any": 0.0,
+    "any_dual": 0.0
+   },
+   "delay_range": {
+    "snapshot": [
+     0.0,
+     0.0
+    ],
+    "window": [
+     0.0,
+     0.0
+    ],
+    "bias": [
+     0.0,
+     0.0
+    ],
+    "iforest": [
+     0.20000000000000284,
+     0.20000000000000284
+    ],
+    "baseline": [
+     0.20000000000000284,
+     0.20000000000000284
+    ],
+    "heading": [
+     0.20000000000000284,
+     0.5
+    ],
+    "course": null,
+    "any": [
+     0.0,
+     0.0
+    ],
+    "any_dual": [
+     0.0,
+     0.0
+    ]
+   },
+   "error_at_alarm": {
+    "snapshot": 1.342552948054246,
+    "window": 1.342552948054246,
+    "bias": 1.342552948054246,
+    "iforest": 3.6787563811274495,
+    "baseline": 3.6787563811274495,
+    "heading": 3.680257123183874,
+    "course": null,
+    "any": 1.342552948054246,
+    "any_dual": 1.342552948054246
+   },
+   "unprotected_error": 10.462704246457982,
+   "protected_error": 1.0366322857920003,
+   "protected_dual_error": 0.7044741365007191,
+   "dual_alarm_sources": [
+    "imu"
+   ],
+   "unprotected_breach": 1.0,
+   "protected_breach": 0.0,
+   "protected_dual_breach": 0.0
+  },
+  {
+   "scenario": "Drift spoof, aggressive (0.2 m/s\u00b2)",
+   "kind": "drift_spoof",
+   "detected": {
+    "snapshot": 1.0,
+    "window": 1.0,
+    "bias": 1.0,
+    "iforest": 1.0,
+    "baseline": 1.0,
+    "heading": 1.0,
+    "course": 0.0,
+    "any": 1.0,
+    "any_dual": 1.0
+   },
+   "median_delay": {
+    "snapshot": 1.5500000000000007,
+    "window": 1.5,
+    "bias": 2.8999999999999986,
+    "iforest": 2.0500000000000007,
+    "baseline": 0.20000000000000284,
+    "heading": 0.20000000000000284,
+    "course": null,
+    "any": 1.5,
+    "any_dual": 0.20000000000000284
+   },
+   "delay_range": {
+    "snapshot": [
+     1.3000000000000043,
+     1.8000000000000043
+    ],
+    "window": [
+     1.5,
+     1.6000000000000014
+    ],
+    "bias": [
+     1.8999999999999986,
+     3.8999999999999986
+    ],
+    "iforest": [
+     1.7000000000000028,
+     2.3000000000000043
+    ],
+    "baseline": [
+     0.20000000000000284,
+     0.20000000000000284
+    ],
+    "heading": [
+     0.20000000000000284,
+     0.5
+    ],
+    "course": null,
+    "any": [
+     1.3000000000000043,
+     1.6000000000000014
+    ],
+    "any_dual": [
+     0.20000000000000284,
+     0.20000000000000284
+    ]
+   },
+   "error_at_alarm": {
+    "snapshot": 0.16702427884533858,
+    "window": 0.16188304631704079,
+    "bias": 0.764659609174357,
+    "iforest": 0.32981528539936555,
+    "baseline": 0.01236058935015668,
+    "heading": 0.013532624285815758,
+    "course": null,
+    "any": 0.16188304631704079,
+    "any_dual": 0.01236058935015668
+   },
+   "unprotected_error": 49.995177163330226,
+   "protected_error": 1.0387083163633541,
+   "protected_dual_error": 0.5801883390884683,
+   "dual_alarm_sources": [
+    "baseline"
+   ],
+   "unprotected_breach": 1.0,
+   "protected_breach": 0.0,
+   "protected_dual_breach": 0.0
+  },
+  {
+   "scenario": "Drift spoof, moderate (0.1 m/s\u00b2)",
+   "kind": "drift_spoof",
+   "detected": {
+    "snapshot": 0.2,
+    "window": 1.0,
+    "bias": 0.3,
+    "iforest": 0.9,
+    "baseline": 1.0,
+    "heading": 1.0,
+    "course": 0.0,
+    "any": 1.0,
+    "any_dual": 1.0
+   },
+   "median_delay": {
+    "snapshot": 22.400000000000006,
+    "window": 2.5500000000000007,
+    "bias": 4.5,
+    "iforest": 3.200000000000003,
+    "baseline": 0.20000000000000284,
+    "heading": 0.20000000000000284,
+    "course": null,
+    "any": 2.5500000000000007,
+    "any_dual": 0.20000000000000284
+   },
+   "delay_range": {
+    "snapshot": [
+     21.900000000000006,
+     22.900000000000006
+    ],
+    "window": [
+     2.1000000000000014,
+     3.5
+    ],
+    "bias": [
+     3.0,
+     13.400000000000006
+    ],
+    "iforest": [
+     2.700000000000003,
+     4.099999999999994
+    ],
+    "baseline": [
+     0.20000000000000284,
+     0.20000000000000284
+    ],
+    "heading": [
+     0.20000000000000284,
+     0.5
+    ],
+    "course": null,
+    "any": [
+     2.1000000000000014,
+     3.5
+    ],
+    "any_dual": [
+     0.20000000000000284,
+     0.20000000000000284
+    ]
+   },
+   "error_at_alarm": {
+    "snapshot": 24.844744862124948,
+    "window": 0.2785643256070272,
+    "bias": 0.9964056273430508,
+    "iforest": 0.47878960300956747,
+    "baseline": 0.012143136911013064,
+    "heading": 0.013192217433974751,
+    "course": null,
+    "any": 0.2785643256070272,
+    "any_dual": 0.012143136911013064
+   },
+   "unprotected_error": 39.995110919845565,
+   "protected_error": 1.2773090894006824,
+   "protected_dual_error": 0.5801883390884683,
+   "dual_alarm_sources": [
+    "baseline"
+   ],
+   "unprotected_breach": 1.0,
+   "protected_breach": 0.0,
+   "protected_dual_breach": 0.0
+  },
+  {
+   "scenario": "Drift spoof, gentle (0.03 m/s\u00b2)",
+   "kind": "drift_spoof",
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 1.0,
+    "heading": 1.0,
+    "course": 0.0,
+    "any": 0.0,
+    "any_dual": 1.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": 0.20000000000000284,
+    "heading": 0.20000000000000284,
+    "course": null,
+    "any": null,
+    "any_dual": 0.20000000000000284
+   },
+   "delay_range": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": [
+     0.20000000000000284,
+     0.20000000000000284
+    ],
+    "heading": [
+     0.20000000000000284,
+     0.5
+    ],
+    "course": null,
+    "any": null,
+    "any_dual": [
+     0.20000000000000284,
+     0.20000000000000284
+    ]
+   },
+   "error_at_alarm": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": 0.011860521047030356,
+    "heading": 0.012843927988038562,
+    "course": null,
+    "any": null,
+    "any_dual": 0.011860521047030356
+   },
+   "unprotected_error": 13.495179014540536,
+   "protected_error": 13.495179014540536,
+   "protected_dual_error": 0.5801883390884683,
+   "dual_alarm_sources": [
+    "baseline"
+   ],
+   "unprotected_breach": 1.0,
+   "protected_breach": 1.0,
+   "protected_dual_breach": 0.0
+  },
+  {
+   "scenario": "Gentle drift spoof from an array replaying a frozen baseline",
+   "kind": "drift_spoof",
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 0.0,
+    "heading": 1.0,
+    "course": 1.0,
+    "any": 0.0,
+    "any_dual": 1.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": 2.210796929681969,
+    "course": 2.57283245595886,
+    "any": null,
+    "any_dual": 2.210796929681969
+   },
+   "delay_range": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": [
+     0.47221315766138616,
+     5.900000000000006
+    ],
+    "course": [
+     0.7722131576613975,
+     6.5
+    ],
+    "any": null,
+    "any_dual": [
+     0.47221315766138616,
+     5.900000000000006
+    ]
+   },
+   "error_at_alarm": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": 0.07434023186138855,
+    "course": 0.10116467904002144,
+    "any": null,
+    "any_dual": 0.07434023186138855
+   },
+   "unprotected_error": 13.49055090512216,
+   "protected_error": 13.49055090512216,
+   "protected_dual_error": 0.9333689210611769,
+   "dual_alarm_sources": [
+    "heading"
+   ],
+   "unprotected_breach": 1.0,
+   "protected_breach": 1.0,
+   "protected_dual_breach": 0.0
+  },
+  {
+   "scenario": "Gentle drift spoof from an attitude-aware array",
+   "kind": "drift_spoof",
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 0.0,
+    "heading": 0.0,
+    "course": 1.0,
+    "any": 0.0,
+    "any_dual": 1.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": 17.3361065788307,
+    "any": null,
+    "any_dual": 17.3361065788307
+   },
+   "delay_range": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": [
+     11.299999999999997,
+     25.372213157661392
+    ],
+    "any": null,
+    "any_dual": [
+     11.299999999999997,
+     25.372213157661392
+    ]
+   },
+   "error_at_alarm": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": null,
+    "heading": null,
+    "course": 4.51071703065551,
+    "any": null,
+    "any_dual": 4.51071703065551
+   },
+   "unprotected_error": 13.49055090512216,
+   "protected_error": 13.49055090512216,
+   "protected_dual_error": 6.280954667510796,
+   "dual_alarm_sources": [
+    "course"
+   ],
+   "unprotected_breach": 1.0,
+   "protected_breach": 1.0,
+   "protected_dual_breach": 0.7
+  }
+ ],
+ "false_alarms_per_hour": {
+  "snapshot": 0.5000555617290815,
+  "window": 0.0,
+  "bias": 0.0,
+  "iforest": 0.0,
+  "baseline": 0.0,
+  "heading": 0.0,
+  "course": 0.0,
+  "any": 0.5000555617290815,
+  "any_dual": 0.5000555617290815
+ },
+ "sweep": [
+  {
+   "accel": 0.01,
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 1.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": 0.20000000000000284
+   }
+  },
+  {
+   "accel": 0.02,
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 1.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": 0.20000000000000284
+   }
+  },
+  {
+   "accel": 0.03,
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 1.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": 0.20000000000000284
+   }
+  },
+  {
+   "accel": 0.05,
+   "detected": {
+    "snapshot": 0.0,
+    "window": 0.0,
+    "bias": 0.0,
+    "iforest": 0.0,
+    "baseline": 1.0
+   },
+   "median_delay": {
+    "snapshot": null,
+    "window": null,
+    "bias": null,
+    "iforest": null,
+    "baseline": 0.20000000000000284
+   }
+  },
+  {
+   "accel": 0.1,
+   "detected": {
+    "snapshot": 0.2,
+    "window": 1.0,
+    "bias": 0.3,
+    "iforest": 0.9,
+    "baseline": 1.0
+   },
+   "median_delay": {
+    "snapshot": 22.400000000000006,
+    "window": 2.5500000000000007,
+    "bias": 4.5,
+    "iforest": 3.200000000000003,
+    "baseline": 0.20000000000000284
+   }
+  },
+  {
+   "accel": 0.2,
+   "detected": {
+    "snapshot": 1.0,
+    "window": 1.0,
+    "bias": 1.0,
+    "iforest": 1.0,
+    "baseline": 1.0
+   },
+   "median_delay": {
+    "snapshot": 1.5500000000000007,
+    "window": 1.5,
+    "bias": 2.8999999999999986,
+    "iforest": 2.0500000000000007,
+    "baseline": 0.20000000000000284
+   }
+  },
+  {
+   "accel": 0.5,
+   "detected": {
+    "snapshot": 1.0,
+    "window": 1.0,
+    "bias": 1.0,
+    "iforest": 1.0,
+    "baseline": 1.0
+   },
+   "median_delay": {
+    "snapshot": 0.8000000000000043,
+    "window": 0.8999999999999986,
+    "bias": 1.7000000000000028,
+    "iforest": 1.3999999999999986,
+    "baseline": 0.20000000000000284
+   }
+  }
+ ]
+}

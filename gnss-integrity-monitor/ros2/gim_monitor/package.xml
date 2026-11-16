@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gim_monitor</name>
+  <version>0.2.0</version>
+  <description>Dual-antenna GNSS integrity monitor in C++: baseline-length, heading-vs-gyro and course-vs-heading tests, and the trust decision a navigation stack consumes.</description>
+  <maintainer email="moabkh917@gmail.com">Mohammad Khan</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>diagnostic_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

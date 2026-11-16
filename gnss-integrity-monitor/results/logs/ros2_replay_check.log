@@ -1,0 +1,11 @@
+clean: 700 epochs, GNSS trusted throughout (Python: no alarm)
+single_transmitter: baseline alarm at 20.2 s, 0.2 s after the attack began (Python: baseline at 20.2 s)
+frozen_baseline: heading alarm at 21.9 s, 1.9 s after the attack began (Python: heading at 21.9 s)
+attitude_aware: course alarm at 38.9 s, 18.9 s after the attack began (Python: course at 38.9 s)
+PASSED
+UAV log: 1732 readings
+  no fix: 250
+  GPS: 1147
+  DGPS: 335
+Heading check not applied: the file has no second antenna.
+PASSED

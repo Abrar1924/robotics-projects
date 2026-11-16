@@ -1,0 +1,7 @@
+Gazebo moved the mower. Tree trunk at x=10 m, 1.5 m beside the lane. Wall face at x=19.9 m.
+open grass: mode NOMINAL, speed 0.50
+under a tree: mode DEGRADED, speed 0.32
+under a tree, driver says GBAS_FIX and 3 cm, receiver says float: mode DEGRADED, speed 0.46
+next to a wall: mode HOLD, speed 0.00
+next to a wall, still bad after the wait: skip the strip
+PASSED

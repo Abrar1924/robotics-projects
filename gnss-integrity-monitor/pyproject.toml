@@ -1,0 +1,13 @@
+[project]
+name = "gnss-integrity-monitor"
+version = "0.1.0"
+description = "GNSS/INS integrity monitoring for small drones: detect jamming, multipath and spoofing"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.11", "scikit-learn>=1.4", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

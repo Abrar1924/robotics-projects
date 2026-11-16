@@ -1,0 +1,8 @@
+open grass: mode NOMINAL, speed limit 0.50, Nav2 command 0.50
+under a tree: mode DEGRADED, speed limit 0.32, Nav2 command 0.32
+next to a wall: mode HOLD, path cancelled, Nav2 command 0.00, mower moved 0.0 cm in 10 s
+hold timed out: strip by the wall given up, supervisor told to retreat
+retreat: mode RETREAT, speed limit 0.30, Nav2 command 0.30, driving away from the wall
+back in open grass: mode NOMINAL at x = 18.9 m
+closest the mower body came to the wall: 0.53 m
+PASSED

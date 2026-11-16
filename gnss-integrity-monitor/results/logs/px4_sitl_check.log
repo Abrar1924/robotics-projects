@@ -1,0 +1,5 @@
+PX4 connected. Waiting for its own GPS and yaw.
+PX4 heartbeat received.
+PX4 clean GPS: course -0.00 rad, yaw -0.00 rad, 50 epochs, course statistic 0.00 (alarm above 19.5), GNSS trusted
+PX4 GPS course pulled off the airframe: course 0.70 rad, yaw -0.00 rad, course statistic 24.2, alarm from the course test
+PASSED

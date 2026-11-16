@@ -1,0 +1,100 @@
+{
+ "As is": {
+  "verdict": "GO WITH MITIGATION",
+  "missions": 5,
+  "lawn_m2": 356.4722579396823,
+  "share": {
+   "ready": 0.3265244464689412,
+   "degraded": 0.5993437995011268,
+   "at risk": 0.07273062591376843,
+   "not visited": 0.0014011281161635395
+  },
+  "mission_minutes": {
+   "mean": 55.081666666720956,
+   "min": 54.05666666671723,
+   "max": 56.98500000006121
+  },
+  "unreported_missed": 0.03514142204008375,
+  "zones": [
+   {
+    "near": "Along the two-storey walls",
+    "area_m2": 10.222500000000004,
+    "cause": "wall reflections: float fixes biased away from the wall",
+    "advice": "Keep the wider wall margin, or add a camera check for the strip along the wall."
+   },
+   {
+    "near": "Under the maple dense core",
+    "area_m2": 7.053950440847394,
+    "cause": "dense canopy: no RTK solution at all",
+    "advice": "Add camera or LiDAR navigation here, a short boundary-wire island, prune the canopy, or leave it for hand mowing."
+   },
+   {
+    "near": "Open lawn beside the maple canopy",
+    "area_m2": 5.250000000000007,
+    "cause": "open sky, but RTK still re-converging after a canopy or wall zone (4\u201310 s)",
+    "advice": "Plan lanes so the robot exits degraded zones into open lawn, not toward a hazard."
+   },
+   {
+    "near": "Along the two-storey walls",
+    "area_m2": 1.6999999999999993,
+    "cause": "wall reflections: float fixes biased away from the wall",
+    "advice": "Keep the wider wall margin, or add a camera check for the strip along the wall."
+   },
+   {
+    "near": "Under the maple canopy",
+    "area_m2": 0.8500000000000014,
+    "cause": "light canopy: mostly RTK float, brief fixed windows",
+    "advice": "The robot slows to 0.2 m/s and skips strips next to trunks; camera assist would recover them."
+   },
+   {
+    "near": "Open lawn beside the two-storey walls",
+    "area_m2": 0.8499999999999996,
+    "cause": "open sky, but RTK still re-converging after a canopy or wall zone (4\u201310 s)",
+    "advice": "Plan lanes so the robot exits degraded zones into open lawn, not toward a hazard."
+   }
+  ]
+ },
+ "Maple's dense core thinned": {
+  "verdict": "GO WITH MITIGATION",
+  "missions": 5,
+  "lawn_m2": 356.4722579396823,
+  "share": {
+   "ready": 0.33213498124536256,
+   "degraded": 0.6275519527235445,
+   "at risk": 0.038911937914929404,
+   "not visited": 0.0014011281161635395
+  },
+  "mission_minutes": {
+   "mean": 53.282833333381085,
+   "min": 52.66333333337882,
+   "max": 53.88833333338328
+  },
+  "unreported_missed": 0.029217785359336872,
+  "zones": [
+   {
+    "near": "Along the two-storey walls",
+    "area_m2": 10.222500000000004,
+    "cause": "wall reflections: float fixes biased away from the wall",
+    "advice": "Keep the wider wall margin, or add a camera check for the strip along the wall."
+   },
+   {
+    "near": "Along the two-storey walls",
+    "area_m2": 1.6999999999999993,
+    "cause": "wall reflections: float fixes biased away from the wall",
+    "advice": "Keep the wider wall margin, or add a camera check for the strip along the wall."
+   },
+   {
+    "near": "Under the maple canopy",
+    "area_m2": 1.0418338632557707,
+    "cause": "light canopy: mostly RTK float, brief fixed windows",
+    "advice": "The robot slows to 0.2 m/s and skips strips next to trunks; camera assist would recover them."
+   },
+   {
+    "near": "Open lawn beside the two-storey walls",
+    "area_m2": 0.8499999999999996,
+    "cause": "open sky, but RTK still re-converging after a canopy or wall zone (4\u201310 s)",
+    "advice": "Plan lanes so the robot exits degraded zones into open lawn, not toward a hazard."
+   }
+  ]
+ }
+}

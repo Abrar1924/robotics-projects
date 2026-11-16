@@ -1,0 +1,50 @@
+{
+  "clean": {
+    "scenario": "Nominal",
+    "attack_start": null,
+    "epochs": 700,
+    "first_alarm": {
+      "baseline": null,
+      "heading": null,
+      "course": null
+    },
+    "alarm_source": "",
+    "alarm_time": null
+  },
+  "single_transmitter": {
+    "scenario": "Gentle drift spoof, one transmit antenna",
+    "attack_start": 20.0,
+    "epochs": 700,
+    "first_alarm": {
+      "baseline": 20.2,
+      "heading": 20.2,
+      "course": null
+    },
+    "alarm_source": "baseline",
+    "alarm_time": 20.2
+  },
+  "frozen_baseline": {
+    "scenario": "Gentle drift spoof, array replaying a frozen baseline",
+    "attack_start": 20.0,
+    "epochs": 700,
+    "first_alarm": {
+      "baseline": null,
+      "heading": 21.9,
+      "course": 22.4
+    },
+    "alarm_source": "heading",
+    "alarm_time": 21.9
+  },
+  "attitude_aware": {
+    "scenario": "Gentle drift spoof, attitude-aware array",
+    "attack_start": 20.0,
+    "epochs": 700,
+    "first_alarm": {
+      "baseline": null,
+      "heading": null,
+      "course": 38.9
+    },
+    "alarm_source": "course",
+    "alarm_time": 38.9
+  }
+}

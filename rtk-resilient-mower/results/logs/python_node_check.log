@@ -1,0 +1,5 @@
+open grass: mode NOMINAL, speed 0.5
+under a tree: mode DEGRADED, speed 0.32
+next to a wall: mode HOLD, speed 0.0
+next to a wall, still bad after the wait: skip the strip
+PASSED

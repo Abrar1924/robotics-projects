@@ -1,0 +1,13 @@
+[project]
+name = "rtk-resilient-mower"
+version = "0.1.0"
+description = "RTK-GNSS robotic mower simulation: coverage planning, EKF fusion and risk-aware graceful degradation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "shapely>=2.0", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

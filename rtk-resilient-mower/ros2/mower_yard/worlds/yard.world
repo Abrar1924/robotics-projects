@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!-- Flat yard. Tree trunk center is x=10, y=1.5, radius 0.2 m, canopy radius 4 m: the mowing
+     lane along y=0 passes under the canopy, 1.3 m clear of the trunk.
+     Wall box is centered at x=20 with thickness 0.2 m, so the near face is x=19.9.
+     drive.py and nav2_drive.py use those same numbers. -->
+<sdf version="1.6">
+  <world name="yard">
+    <gravity>0 0 0</gravity>
+    <plugin name="gazebo_ros_state" filename="libgazebo_ros_state.so"/>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <model name="tree">
+      <static>true</static>
+      <pose>10 1.5 0 0 0 0</pose>
+      <link name="trunk">
+        <visual name="trunk">
+          <pose>0 0 1.5 0 0 0</pose>
+          <geometry><cylinder><radius>0.2</radius><length>3</length></cylinder></geometry>
+          <material>
+            <ambient>0.35 0.22 0.1 1</ambient>
+            <diffuse>0.45 0.28 0.12 1</diffuse>
+          </material>
+        </visual>
+        <visual name="canopy">
+          <pose>0 0 3.0 0 0 0</pose>
+          <geometry><sphere><radius>4.0</radius></sphere></geometry>
+          <material>
+            <ambient>0.1 0.45 0.1 1</ambient>
+            <diffuse>0.15 0.55 0.15 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall">
+      <static>true</static>
+      <pose>20 0 1 0 0 0</pose>
+      <link name="wall">
+        <visual name="wall">
+          <geometry><box><size>0.2 10 2</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.6 1</ambient>
+            <diffuse>0.75 0.75 0.75 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="mower">
+      <pose>0 0 0.2 0 0 0</pose>
+      <link name="base_link">
+        <inertial>
+          <mass>5</mass>
+          <inertia>
+            <ixx>0.1</ixx>
+            <iyy>0.1</iyy>
+            <izz>0.1</izz>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyz>0</iyz>
+          </inertia>
+        </inertial>
+        <visual name="body">
+          <geometry><box><size>0.7 0.5 0.3</size></box></geometry>
+          <material>
+            <ambient>0.7 0.3 0.05 1</ambient>
+            <diffuse>0.9 0.4 0.05 1</diffuse>
+          </material>
+        </visual>
+      </link>
+      <plugin name="planar_move" filename="libgazebo_ros_planar_move.so">
+        <ros>
+          <namespace>/</namespace>
+        </ros>
+        <update_rate>30</update_rate>
+        <publish_rate>20</publish_rate>
+        <odometry_frame>odom</odometry_frame>
+        <robot_base_frame>base_link</robot_base_frame>
+        <publish_odom>true</publish_odom>
+        <publish_odom_tf>false</publish_odom_tf>
+      </plugin>
+    </model>
+  </world>
+</sdf>
